@@ -6,16 +6,22 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header{
     display: flex;
+    max-height: 100%;
     justify-content: center;
     font-size: 21px;
     position: fixed;
     z-index: 1;/*Da peferencia*/
     width: 100%;
     background-color: white;
-    box-shadow: 2px 5px 15px 2px black;
+    box-shadow: 2px 5px 15px 2px rgb(3, 3, 3, 0.4);
 
+}
+section{
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 .container{
     display: flex;
@@ -85,6 +91,8 @@ nav a{
 }
 .CorpoDiv{
     display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
     justify-content: center;
     max-width: 1000px;
     min-height: 100vh;
@@ -155,12 +163,11 @@ p{
 }
 
 @keyframes PrimeiraAnimacao{
-    0%{ top:20%; }
-    20%{ top:15%; }/*Leva o quadrado para direita*/
-    50%{ top:20%;  }/*Leva o quadrado para baixo*/
-    80%{top:15%; }/*Leva o quadrado para esquerda*/
-    100%{top:20%;  }/*Leva o quadrado para cima*/
-   
+    0%{ top:20%;}
+    20%{ top:15%;}
+    50%{ top:20%; }
+    80%{top:15%; }
+    100%{top:20%;}
 }
 .divAnimada img{
     height: 550px;
@@ -459,7 +466,6 @@ h3{
     height: 500px;
     width: 300px;
     position:relative;
-    background-color: red;
     object-fit: cover;
 }
 /*Produtos*/
@@ -601,8 +607,8 @@ h3{
 /*Resposividade*/
 @media (width:1024px){
    #home .TextLeft{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 @media(max-width:798px){
